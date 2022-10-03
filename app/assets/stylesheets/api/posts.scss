@@ -1,0 +1,191 @@
+// // Place all the styles related to the api::posts controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post-wall {
+    flex: 1 0 auto;
+}
+
+.posts {
+    color: rgb(220,221,222);
+    height: 95vh;
+    position: relative;
+}
+
+.post-history {
+    overflow-y: scroll;
+    max-height: 90vh;
+    max-width: 100%;
+}
+
+.post-item {
+    display: flex;
+    justify-content:space-between;
+    padding: 1vh 1vh 1vh 0.75vh;
+    position: relative;
+}
+
+.post-item:hover {
+    background-color: rgb(50,53,59)
+}
+
+.post-content {
+    display: flex;
+}
+
+.post-profile-pic img {
+    height: 4vh;
+    padding-right: 1vh;
+}
+
+.post-info {
+    display: flex;
+    flex-direction:column;
+}
+
+.post-author {
+    padding-right: 0.75vh;
+    font-family: sf-arborcrest-heavy;
+    font-size: 1.75vh;
+}
+
+.post-date {
+    font-family: sf-arborcrest-medium;
+    font-size: 1.25vh;
+    letter-spacing: 0.1vw;
+    color: rgb(102,118,125);
+}
+
+.post-body {
+    padding-top: 0.75vh;
+    font-size: 1.75vh;
+}
+
+.post-item i {
+    display: none;
+    position: absolute;
+    right: 1.5vh;
+    cursor: pointer;
+    top: -1vh;
+    font-size: 1vh;
+    padding: .75vh;
+    background-color: rgb(54,57,63);
+    box-shadow: 0vh 0vh 0.2vh black;
+    border-radius: 0.3vh;
+}
+
+.post-item:hover i {
+    display: block;
+}
+
+.post-item i:hover {
+    background-color: rgb(62,66,72);
+}
+
+.post-settings .post-settings-dropdown {
+    display: none;
+}
+
+.active-post-settings i {
+    display: block;
+    background-color: rgb(62,66,72);
+}
+
+.active-post-settings .post-settings-dropdown {
+    display: block;
+    position: absolute;
+    right: 4.1vh;
+    bottom: -0.5vh;
+    background-color: rgb(24,25,28);
+    border-radius: 0.5vh;
+    padding: 0.5vh;
+}
+
+.post-settings-dropdown > li {
+    padding: 1vh;
+    border-radius: 0.5vh;
+}
+
+.post-settings-dropdown > li:hover {
+    background-color: rgb(66, 74, 167);
+    cursor: pointer;
+}
+
+.post-form {
+    background-color: transparent;
+}
+
+.post-form input[type='text'] {
+    background-color: rgb(64,68,75);
+    padding: 0.75vh 2vh 0.75vh 2vh;
+    width: 90%;
+    height: 1.75vh;
+    margin-left: 20px;
+    caret-color: white;
+    font-size: 1.25vh;
+    font-family: filetto-regular;
+    color: white;
+    border: 0vh;
+    outline: none;
+    border-radius: 0.7vh;
+    letter-spacing: 0.075em;
+}
+
+.post-form input[type='submit'] {
+    display: none;
+}
+
+.post-item-edit {
+    background-color: rgb(44, 46, 51);
+}
+
+.post-item-edit .post-content {
+    padding: 1vh 0vh 1.25vh 0.75vh;
+}
+
+.post-item-edit i {
+    display: none;
+    position: absolute;
+    right: 5vh;
+    cursor: pointer;
+    top: -1vh;
+    padding: .75vh;
+    background-color: rgb(54,57,63);
+    box-shadow: 0vh 0vh 0.1vh black;
+    border-radius: 0.5vh;
+}
+
+.post-edit-form input[type='text'] {
+    background-color: rgb(64,68,75);
+    padding: 0.75vh 2vh 0.75vh 1vh;
+    width: 70vw;
+    height: 1.75vh;
+    margin-top: 1vh;
+    caret-color: white;
+    font-size: 1.25vh;
+    font-family: filetto-regular;
+    color: white;
+    border: 0vh;
+    outline: none;
+    border-radius: 0.7vh;
+    letter-spacing: 0.075em;
+}
+
+.post-edit-form input[type='submit'] {
+    display: none;
+}
+
+//SCROLLBAR
+.post-history::-webkit-scrollbar {
+    width: 0.35vw;
+}
+  
+.post-history::-webkit-scrollbar-track {
+    background: rgb(46,51,56);
+    border-radius: 5vh;
+}
+  
+.post-history::-webkit-scrollbar-thumb {
+    background: rgb(32,34,37);
+    border-radius: 5vh;
+}

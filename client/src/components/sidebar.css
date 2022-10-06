@@ -1,0 +1,40 @@
+.sidebar {
+  display: flex;
+  flex: 0.25;
+  background-color: #27282c;
+  height: 100vh;
+  flex-direction: column;
+}
+.chatarea {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2c3034;
+}
+
+.sidebar__top {
+  padding: 25px;
+  border-bottom: 3px solid #2e3035;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    flex:0.5;
+    padding: 3px;
+    background-color: #2f3135;
+    border-radius: 3px;
+}
+.sidebar__channels {
+  flex: 1;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

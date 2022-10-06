@@ -9,18 +9,26 @@ import "./test.css"
 
 const ChatareaMessage = () => {
   const channelId= useSelector(selectChannelId);
-
-
   const[input, setInput]=useState("")
+
+  const submitHandler= (e) => {
+    e.preventDefault()
+    // to do dispatch an action 
+    setInput("")
+
+  }
+
+  
   return (
     <div className="flex p-4 m-5 text-gray-300 items-center border-t-2 rounded-lg cursor-pointer border-gray-500 justify-between bg-[#474b53]">
       <AddCircleRoundedIcon className="hover:text-white" fontSize="large" />
-      <form className="chatareamessage">
+      <form onSubmit={submitHandler} className="chatareamessage">
         <input
           className="w-full bg-transparent outline-0 text-xl text-gray-300 p-5"
           value={input}
           onChange={(e)=>{
             setInput(e.target.value)
+            
 
           }}
           

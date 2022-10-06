@@ -1,7 +1,15 @@
 import React from "react";
 import Messages from "./messages";
 import "./test.css"
-const chats = () => {
+import { useSelector } from "react-redux";
+import { messages } from "../features/appSlice";
+const Chats = () => {
+  const messagesTexts = useSelector(messages);
+  const messageDivs = messagesTexts.map((m) => {
+    return(<div>
+      {m}
+    </div>)
+  }) 
   return (
     <div className="chatareamessage">
       <Messages/>
@@ -11,10 +19,9 @@ const chats = () => {
       <Messages/>
       <Messages/>
       <Messages/>
-      <Messages/>
-      
+      {/* {messageDivs}   */}
     </div>
   );
 };
 
-export default chats;
+export default Chats;

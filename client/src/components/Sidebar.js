@@ -70,7 +70,7 @@ const Sidebar = () => {
           <SignalCellularAltIcon fontSize="large" />
           <div className="text-gray-500 flex-1 p-2">
             <h3 className="text-[#4fb185]">Voice Connected</h3>
-            <p className="text-xs">stream</p>
+            <p className="text-xs">server-US</p>
           </div>
           <div className="md:space-x-3">
             <InfoOutlinedIcon />
